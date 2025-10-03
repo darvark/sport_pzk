@@ -34,14 +34,4 @@ jobs:
           source: ./
           destination: ./_site2
           
-      - name: Rem old artifact
-        run: rm -rf /home/runner/work/strona.tgz
-        
-      - name: Archive
-        run: tar -cvzf /home/runner/work/strona.tgz ./_site2
-  
-      - name: Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: strona
-          path: /home/runner/work/strona2.tgz
+
